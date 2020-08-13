@@ -1,4 +1,4 @@
-var vids = ['0Bmhjf0rKe8', 'kg12uhZu9_o', '6HVa4Y-Ymlw', 'iGDjX44OMSs'];
+var vids = ['YNwfZlIEh2Q', 'y1uJlBGZTMs', '61hVxP-AObU', 'QUsggBb1cTQ'];
 var vIndex = 0;
 
 // shuffleVIDs();
