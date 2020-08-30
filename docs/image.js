@@ -7,7 +7,7 @@ $(document).ready(function() {
 // get a random time interval for popping next image
 function getRandomTime() {
     // pop image in 5s - 45s
-    var t = Math.floor(Math.random() * 40000) + 5000;
+    var t = Math.floor(Math.random() * 15000) + 25000;
     // var t = Math.floor(Math.random() * 1000) + 3000;
     return t;
 }
@@ -19,10 +19,17 @@ function startPopImage() {
 };
 
 function pop_image () {
-    //choose a random image and a random position
+    //choose a random image
     var index=Math.floor(Math.random() * num_image)+1;
-    var left_pos=Math.floor(Math.random() * 80); //position in percentage
-    var top_pos=Math.floor(Math.random() * 80);
+
+    // choose a random position
+    // var left_pos=Math.floor(Math.random() * 80); //position in percentage
+    // var top_pos=Math.floor(Math.random() * 80);
+
+    // choose a fixed position
+    var left_pos=75;
+    var top_pos=65;
+
     showImage(index, left_pos, top_pos);
 
     // set the global image count, will be used to record the time to close the image
@@ -32,8 +39,11 @@ function pop_image () {
     // set the timestamp when the image shows
     imageShowTime = new Date();
 
-    // by default, disappear in 3 seconds
-    setTimeout(hideImage, 3000);
+    // // by default, disappear in 3 seconds
+    // setTimeout(hideImage, 3000);
+
+    // by default, disappear in 7 seconds
+    setTimeout(hideImage, 7000);
 }
 
 // show a random image at a random position
