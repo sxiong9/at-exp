@@ -1,6 +1,6 @@
-$(document).ready(function() {
-    onYouTubePlayerAPIReady();
-});
+// $(document).ready(function() {
+//     onYouTubePlayerAPIReady();
+// });
 
 var vids = ['YNwfZlIEh2Q', 'y1uJlBGZTMs', '61hVxP-AObU', 'QUsggBb1cTQ'];
 var vIndex = 0;
