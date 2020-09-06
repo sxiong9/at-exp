@@ -1,6 +1,7 @@
 $(document).ready(function() {
     // full screen to for experiments
-    openFullscreen();
+    setTimeout(openFullscreen, 2000);
+    // openFullscreen();
 });
 
 /* View in fullscreen */
